@@ -17,7 +17,7 @@ for i,l in enumerate(y_test):
 
 np.random.seed(1)
 relu = lambda x:(x>=0) * x # returns x if x > 0, return 0 otherwise
-relu2deriv = lambda x: x>=0 # returns 1 for input > 0, return 0 otherwise
+relu2deriv = lambda x: x>=0 #* 1 # returns 1 for input > 0, return 0 otherwise
 alpha, iterations, hidden_size, pixels_per_image, num_labels = (0.005, 350, 40, 784, 10)
 
 weights_0_1 = 0.2*np.random.random((pixels_per_image,hidden_size)) - 0.1
