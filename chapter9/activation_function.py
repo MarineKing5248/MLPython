@@ -21,7 +21,7 @@ def tanh(x):
     return np.tanh(x)
 
 def tanh2deriv(output):
-    return 1 - (output ** 2)
+    return 1 - (output ** 2
 
 def softmax(x):
     temp = np.exp(x)
